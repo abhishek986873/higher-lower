@@ -1,0 +1,54 @@
+import pyfiglet
+import random
+
+# -------------------------------------------------------------------------------------------------------------------------------
+
+# function -1 / to print  heading of the game as [HIGHER LOWER GAME]
+
+def heading(x,y):  # x = heading of game its depend on you what you want to call ,y =  font name
+    ascii_code = pyfiglet.figlet_format(x, font=y)
+    print(ascii_code)
+    print('-' * 80)
+
+# calling function - 1
+heading("HIGHER  LOWER GAME" , 'standard')
+
+#----------------------------------------------------------------------------------------------------------------------------------------------
+
+# function - 2  creating two dictionary 1st contain 12 stars with insta followers and 2nd dictionary with 12 other followers and we compare them by taking randomly
+
+DICT1 = {
+    "⚫ SHARUKH KHAN":37,
+    "⚫ RANVEER KAPOOR":2.4,
+    "⚫ DEEPIKA PADUKON":33,
+    "⚫ VIRAT KOHLI":244,
+    "⚫ TAYLOR SWIFT":253,
+    "⚫ ASHISH CHANCHLANI":14,
+    "⚫ AMIT BADANA ":9,
+    "⚫ RONALDO":573
+
+         }
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DICT2 = {
+    "⚫ SALMAN KHAN":60,
+    "⚫ RANVEER SINGH": 43,
+    "⚫ PRIYANKA CHOPRA":86,
+    "⚫ DHONI":41,
+    "⚫ ARJIT SINGH":7,
+    "⚫ BHUVAM BAM":16,
+    "⚫ HARSH BENIWAL":6,
+    "⚫ MESSI": 453
+
+}
+
+#-------------------------------------------------------------------------------------------------------------------------------------
+# function -3 selecting random celibrity from dict1
+random_celibrity1 = random.choice(list(DICT1.items()))
+print(random_celibrity1)
+
+# function - 4 selecting random celibrity from dict2
+random_celibrity2 = random.choice(list(DICT2.items()))
+print(random_celibrity2)
+
